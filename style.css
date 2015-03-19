@@ -1,0 +1,563 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* HEADING STYLES
+==================================================*/
+
+h1 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 700;
+	font-size: 28px;
+	letter-spacing: 6px;
+	line-height: 28px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0.5;
+}
+
+h2 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400 italic;
+	font-size: 12px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0.5;
+}
+
+h3 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0.5;
+}
+
+h4 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400;
+	font-size: 30px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0.5;
+}
+
+h5 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0.25;
+}
+
+h6 {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 13px;
+	color: #8E795A;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+p {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 28px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0.5;
+}
+
+
+/* Link Styles
+__________________________________________________*/
+
+/* unvisited link */
+a:link {
+    color: #8E795A;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #8E795A;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #8E795A;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #8E795A;
+    text-decoration: none;
+}
+
+
+/* GENERAL STYLES
+==================================================*/
+
+img {
+	max-width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* WRAPPER STYLES
+==================================================*/
+
+.wrapper {
+	width: 100%;
+}
+
+.contentWrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+/* HEADER STYLES
+==================================================*/
+
+header {
+	background-image: url(images/girls-night-in-edith-sodergran-cover.jpg);
+	background-size: 100vw;
+	background-attachment: scroll;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-color: #222222;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.logo {
+    z-index: 999;
+}
+
+.logo h1 {
+	display: none;
+}
+
+.logo h2 {
+	display: none;
+}
+
+/* Drink Choice Styles
+==================================================*/
+
+.drinkChoice {
+	background-color: #F3E6E0;
+	padding: 100px;
+	position: relative;
+}
+
+.contentImage {
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.block h5 {
+	margin: 5px;
+	margin-bottom: 5px;
+}
+
+.block h6 {
+	margin: 5px;
+}
+
+.block {
+	width: 25%;
+	float: left;
+	padding: 3%;
+	display: inline-block;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+input.drink {
+	margin-top: 20px;
+}
+
+.contentHeader {
+	padding-bottom: 30px;
+}
+
+
+/* Location Choice Styles
+==================================================*/
+
+.locationChoice {
+	background-color: #F6F1ED;
+	padding: 100px;
+	position: relative;
+}
+
+.locationBlock {
+	width: 50%;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+input.location {
+	margin-top: 20px;
+}
+
+.locationImage {
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.locationBlock h5 {
+	margin: 5px;
+	margin-bottom: 5px;
+}
+
+.locationBlock h6 {
+	margin: 5px;
+}
+
+
+/* Price Choice Styles
+==================================================*/
+
+.priceChoice {
+	background-color: #F3E6E0;
+	padding: 100px;
+	position: relative;
+}
+
+.priceImage {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.priceRange {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: center; 
+}
+
+.slider {
+  width: 100%;
+  margin-top: 30px; 
+}
+
+.priceRange h5 {
+	margin-bottom: 100px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+  background-color: #222222;
+  border: 3px #8E795A;
+  border-radius: 10px;
+  border: 3px solid #8E795A;
+  outline: 0;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; 
+}
+
+input[type="range"]:hover {
+  background-color: #8E795A; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #8E795A;
+  border-radius: 30px;
+  border: 3px solid #8E795A;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #8E795A; 
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  -webkit-box-shadow: 0px 0px 1px #8E795A;
+          box-shadow: 0px 0px 1px #8E795A; 
+}
+
+
+/* Submit Styles
+==================================================*/
+
+.submitForm {
+	background-color: #F6F1ED;
+	padding: 100px;
+	position: relative;
+	border: 3px solid #8E795A;
+}
+
+.submitForm p {
+	font-size: 8px;
+	margin-top: 35px;
+	margin-bottom: 0px;
+}
+
+
+button, .button {
+	border: 3px solid #8E795A;
+	background-color: #222222;
+	color: #8E795A;
+	padding: 18px 30px;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #8E795A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	outline: none;
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+	button:hover {
+		border: 3px solid #222222;
+		background-color: #8E795A;
+		color: #222222;
+		-webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; 
+	}
+
+	button:hover a {
+		color: #222222;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+
+/* Results Styles
+==================================================*/
+
+.results {
+	background-color: #F3E6E0;
+	padding: 40px;
+	list-style: none;
+	padding-bottom: 65px;
+}
+
+.results ul {
+	margin: 0;
+	padding: 0;
+	margin-left: 0;
+	list-style: none;
+}
+
+.results ul li {
+	font-family: 'Libre Baskerville', Times, serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #8E795A;
+	text-align: center;
+	list-style: none;
+	line-height: 30px;
+	margin: 0;
+}
+
+.results img {
+	width: 350px;
+	margin-bottom: 50px;
+	border: 3px solid #8E795A;
+}
+
+
+/* FOOTER STYLES
+==================================================*/
+
+.footer {
+	background-color: #222222;
+	padding: 100px;
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* MEDIA QUERIES
+==================================================*/
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1150px) {
+
+	header {
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.block {
+		display: inline-block;
+		width: 50%;
+	}
+
+	.locationBlock {
+		width: 100%;
+	}
+
+}
+
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	header {
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.locationBlock {
+		width: 100%;
+	}
+
+	.locationImage {
+		margin-top: 30px;
+	}
+
+	.contentImage {
+		margin-top: 20px;
+	}
+
+	.priceChoice {
+		padding: 50px;
+	}
+
+	button {
+		font-size: 12px;
+		padding: 16px 38px;
+	}
+
+	.submitForm {
+		padding: 75px;
+	}
+
+}
+
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	h4 {
+		font-size: 25px;
+	}
+
+	header {
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.drinkChoice {
+		padding: 40px;
+	}
+
+	.locationChoice {
+		padding: 20px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.priceChoice {
+		padding: 20px;
+		padding-top: 50px;
+	}
+
+	.block {
+		/*display: block;*/
+		width: 100%;
+	}
+
+	.block h5 {
+		font-size: 14px;
+	}
+
+	.submitForm {
+		background-color: #F6F1ED;
+		padding: 15px;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		position: relative;
+		border: 3px solid #8E795A;
+	}
+
+	.submitForm p {
+		line-height: 18px;
+	}
+
+	.results {
+		/*padding-left: 0px;*/
+	}
+
+	.footer h2 {
+		line-height: 22px;
+	}
+
+	.footer h6 {
+		line-height: 20px;
+	}
+
+	.results {
+		padding: 15px;
+		padding-bottom: 40px;
+	}
+
+	.footer {
+		padding: 60px;
+	}
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- SETUP AND GENERAL  
+=======================================================-->
+
+	<meta charset="UTF-8">
+	<title>Girls' Night In</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="description" content="Libation Selector for ladies looking for a lovely night in.">
+	<meta name="keywords" content="wine, wine selector, lcbo, canada, girls night, girls night in">
+	<meta name="author" content="Andrea Crofts">
+	<link rel="stylesheet" href="style.css"> <!-- CSS Stylesheet -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> <!-- FontAwesome Icons -->
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'> <!-- Google Fonts -->
+	<link rel="stylesheet" href="animate.min.css"> <!-- Animate.CSS -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+
+</head>
+
+<body>
+
+<!-- HEADER AND NAV 
+=======================================================-->
+
+		<header>
+			<div class="logo">
+				<img src="images/girls-night-in-logo.svg" alt="Girls' Night In Logo" class="animated fadeIn">
+				<h1>Girls' Night In</h1>
+				<h2>Find Your Perfect Libation</h2>
+			</div> <!-- end .logo -->
+		</header> <!-- end .header -->
+
+
+<!-- WRAPPER & FORM
+=======================================================-->
+
+	<div class="wrapper">
+		<form id="wineAppForm" name="wineApp">
+
+<!-- Drink Choice 	
+=======================================================-->
+
+			<div class="drinkChoice clearfix" id="wine">
+				<div class="contentWrapper">
+				
+					<div class="contentHeader">
+						<h6>Step One</h6>
+						<h4>Choose Your Libation</h4>
+						<h6>(Don't Choose Responsibly)</h6>
+					</div> <!-- end .contentHeader -->
+
+					<div class="blocks">
+						<div class="block">
+								<label for="red-wine">
+									<img class="contentImage" src="images/red-wine-glass.svg" alt="Red Wine Glass">
+									<h5>Red Wine</h5>
+									<h6>Luscious Reds</h6>
+								</label>
+								<input class="drink" id="red-wine" type="radio" name="drink" value="red_wine" />
+						</div> <!-- end .block -->
+
+						<div class="block">
+							<label for="white-wine">
+								<img class="contentImage"
+								src="images/white-wine-glass.svg" alt="White Wine Glass">
+								<h5>White Wine</h5>
+								<h6>Wonderful Whites</h6>
+							</label>
+								<input class="drink" id="white-wine" type="radio" name="drink" value="white_wine" />
+						</div> <!-- end .block -->
+
+						<div class="block">
+							<label for="rose">
+								<img class="contentImage" src="images/rose-wine-glass.svg" alt="Glass of Rose">
+								<h5>Rosé</h5>
+								<h6>Yes Way, Rosé</h6>
+							</label>
+							<input class="drink" id="rose" type="radio" name="drink" value="rose" />
+						</div> <!-- end .block -->
+
+						<div class="block">
+							<label for="champagne">
+								<img class="contentImage"
+								src="images/champagne-glass.svg" alt="Glass of Champagne">
+								<h5>Champagne</h5>
+								<h6>Pop Some Bubbly</h6>
+							</label>
+							<input class="drink" id="champagne" type="radio" name="drink" value="champagne" />
+						</div> <!-- end .block -->
+
+					</div> <!-- end .blocks -->
+				</div> <!-- end .wrapper -->
+			</div> <!-- end .drinkChoice -->
+
+
+<!-- Location Choice 
+=======================================================-->
+
+			<div class="locationChoice clearfix">
+				<div class="contentWrapper">
+
+					<div class="contentHeader">
+						<h6>Step Two</h6>
+						<h4>Choose Your Location</h4>
+					</div> <!-- end .contentHeader -->
+						<div class="locationBlocks">
+							<div class="locationBlock">
+								<label for="canada">
+									<img class="locationImage" src="images/canada-james-keuning-fancy.svg" alt="Canada Map Graphic">
+									<h5>Domestic</h5>
+									<h6>Canadian Varieties</h6>
+								</label>
+								<input class="location" type="radio" id="canada" name="location" value="domestic"/>
+							</div> <!-- end .locationBlock -->
+
+							<div class="locationBlock">
+								<label for="international">
+									<img class="locationImage" src="images/world-ted-grajeda-fancy.svg" alt="World Map Graphic">
+									<h5>International</h5>
+									<h6>Worldwide Varieties</h6>
+								</label>
+								<input class="location" id="international" type="radio" name="location" value="international"/>
+							</div> <!-- end .locationBlock -->
+						</div> <!-- end .locationBlocks -->
+
+				</div> <!-- end .contentWrapper -->
+			</div> <!-- end .locationChoice -->
+
+
+<!-- Price Choice 
+=======================================================-->
+
+			<div class="priceChoice clearfix">
+				<div class="contentWrapper">
+
+					<div class="contentHeader">
+						<h6>Step Three</h6>
+						<h4>Pick Your Price</h4>
+					</div> <!-- end .contentHeader -->
+
+					<div class="priceBlocks">
+						<div class="priceBlock">
+							<img class="priceImage" src="images/coins-arthur-schmitt.svg" alt="Coins and Money Graphic">
+
+							<div class="priceRange">
+								<div class="slider">
+							  		<input type="range" name="priceSlider" id="priceTag" min="7.00" max="200.00" value="1" onchange="rangevalue.value=value"/>
+								<label class="cheapDrunk"> 	
+									<h5>Price tag of $ <output id="rangevalue">7</output> &amp under</h5>
+								</label> <!-- end .cheapDrunk -->
+						  	</div> <!-- end .priceRange -->
+						</div> <!-- end .priceBlock -->
+					</div> <!-- end .priceBlocks -->
+
+				</div> <!-- end .contentWrapper -->
+			</div> <!-- end .priceChoice -->
+
+
+<!-- Submit Form 
+=======================================================-->
+
+	<div class="contentWrapper">
+		<div class="submitForm">
+				<h6>Ladies, It's Time To</h6>
+				<h4>Find Tonight's Treat</h4>
+						<button name="drinksUp" id="#tonightsDrink" value="submit">Drinks Up!</button>
+				<p>(Scroll down to view your results)</p>
+		</div> <!-- end .submitForm -->
+	</div> <!-- end .contentWrapper -->
+
+
+		</form> <!-- end .wineAppForm -->
+	</div> <!-- end .wrapper -->
+
+
+<!-- Results 
+=======================================================-->
+
+	<div class="results clearfix">
+		<div class="contentWrapper">
+			<div class="contentHeader">
+				<h6>Behold, Your Results!</h6>
+				<h4>We Recommend:</h4>
+			</div> <!-- end.contentHeader -->
+
+				<ul class="animated fadeIn">
+					<!-- Results will be appended here-->
+				</ul>
+
+				<a href="#wine" class="button drinksUpButton">Let's Try That Again!</a>
+
+		</div> <!-- end .contentWrapper -->
+	</div> <!-- end .results -->
+
+
+<!-- FOOTER
+=======================================================-->
+
+		<div class="footer clearfix">
+			<h2><a href="http://www.andreacrofts.codes" target="blank">Design and Code by Andrea Crofts</a></h2>
+			<h6>Girls' Night In is not funded or endorsed by the LCBO or its' affiliates.</h6>
+			<br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.andreacrofts.codes/girlsnightin" data-text="Ladies, find your wine for tonight's girls night in" data-via="andreacrofts" data-related="andreacrofts" data-count="none" data-hashtags="girlsnightin" data-dnt="true">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div> <!-- end .footer -->
+
+
+<!-- JAVASCRIPT 
+=======================================================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jquery -->
+
+<script src="js/app.js"></script>
+
+<script> // Smooth Scroll
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+	});
+</script>
+
+</body> <!-- end .body -->	
+</html>
