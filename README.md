@@ -2,7 +2,7 @@ Girls' Night In
 ========
 
 View The App Live!
-http://www.andreacrofts.codes/girlsnightin
+www.andreacrofts.codes/girlsnightin
 
 ========
 
@@ -11,4 +11,4 @@ Girls' Night In is a personal project that manifested itself after many indecisi
 
 ========
 
-Please (don't) enjoy responsibly! If you'd like to improve this app, please feel free to fork it ;)
+Please (don't) enjoy responsibly! If you'd like to improve this app, please feel free to fork it ;) The LCBO Api is awesome, and can be found online at www.lcboapi.com.
